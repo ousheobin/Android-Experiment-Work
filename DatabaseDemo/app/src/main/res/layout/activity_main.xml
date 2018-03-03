@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.gcu.databasedemo.MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_create_db"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="建立数据库"/>
+        <Button
+            android:id="@+id/btn_open_db"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="打开数据库"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:text="浏览通讯录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="上一记录"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="下一记录"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="用户姓名："/>
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="联系电话："/>
+            <EditText
+                android:id="@+id/edt_user_phone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="家庭住址："/>
+            <EditText
+                android:id="@+id/edt_user_address"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="电子信箱："/>
+            <EditText
+                android:id="@+id/edt_user_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn_add_record"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="增加" />
+
+        <Button
+            android:id="@+id/btn_edit_record"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="修改" />
+
+
+        <Button
+            android:id="@+id/btn_delete_record"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="删除"/>
+
+        <Button
+            android:id="@+id/btn_close_phone_book"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="关闭通讯录"/>
+    </LinearLayout>
+
+</LinearLayout>
